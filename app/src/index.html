@@ -18,6 +18,7 @@
     <br>
       <h1>Create a Star</h1>
       <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
+      <br><label for="starName">Star Symbol:</label><input type="text" id="starSymbol"></input>
       <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
       <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
       <br>
@@ -26,9 +27,34 @@
       <h1>Look up a Star</h1>
       <br><label for="name">Star ID:</label><input type="text" id="lookid"></input>
       <br><br><button onclick="App.lookUp()">Look Up a Star</button>
-      <hr>
       <br>
       <span id="status"></span>
+      <br>
+      <hr>
+      <br>
+      <h1>Get Star Owner</h1>
+      <br><label for="name">Star ID:</label><input type="text" id="tokenid"></input>
+      <br><br><button onclick="App.getOwner()">Get Star Owner</button>
+      <br>
+      <span id="owner"></span>
+      <br>
+      <hr>
+      <br>
+      <h1>Exchange stars</h1>
+      <br><label for="name">Star ID 1:</label><input type="text" id="lookid1"></input>
+      <br><label for="name">Star ID 2:</label><input type="text" id="lookid2"></input>
+      <br><br><button onclick="App.exchange()">Exchange Stars</button>
+      <br>
+      <span id="message"></span>
+      <br>
+      <hr>
+      <br>
+      <h1>Transfer star</h1>
+      <br><label for="name">Address:</label><input type="text" id="addressto"></input>
+      <br><label for="name">Star ID: </label><input type="text" id="tokenidto"></input>
+      <br><br><button onclick="App.transfer()">Transfer Star</button>
+      <br>
+      <span id="messagetransfer"></span>
       <br>
     <script src="index.js"></script>
   </body>
